@@ -1,0 +1,33 @@
+/*General styles*/
+
+html{
+    font-size:16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*Grid styles*/
+
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.limited{
+    max-width: 1140px;
+    margin:auto;
+}
+
+@for $i from 1 to 13{
+    $w:($i/12) * 100%;
+    .small-#{$i} {flex-basis: $w;}
+}

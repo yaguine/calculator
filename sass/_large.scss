@@ -1,0 +1,9 @@
+/*General styles*/
+
+
+/*Grid styles*/
+
+@for $i from 1 to 13{
+    $w:($i/12) * 100%;
+    .large-#{$i} {flex-basis: $w;}
+}

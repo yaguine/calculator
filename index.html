@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <div id="previousNumber" style="height:30px"></div>
+  <div id="currentNumber" style="height:30px">0</div>
+  <div>
+    <button id="butt-del" class="">DEL</button>
+    <button id="butt-reset" class="">RESET</button>
+  </div>
+  <div>
+    <button id="butt-0" class="digit-button">0</button>
+    <button id="butt-1" class="digit-button">1</button>
+    <button id="butt-2" class="digit-button">2</button>
+    <button id="butt-3" class="digit-button">3</button>
+    <button id="butt-4" class="digit-button">4</button>
+    <button id="butt-5" class="digit-button">5</button>
+    <button id="butt-6" class="digit-button">6</button>
+    <button id="butt-7" class="digit-button">7</button>
+    <button id="butt-8" class="digit-button">8</button>
+    <button id="butt-9" class="digit-button">9</button>
+    <button id="butt-point" class="">.</button>
+  </div>
+  <div>
+    <button id="butt-add" class="operator-button">+</button>
+    <button id="butt-subs" class="operator-button">-</button>
+    <button id="butt-mult" class="operator-button">X</button>
+    <button id="butt-div" class="operator-button">/</button>
+  </div>
+  <div>
+    <button id="butt-eq">=</button>
+  </div>
 
-
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="javascript/script_good.js"></script>
 </body>
+
 </html>
