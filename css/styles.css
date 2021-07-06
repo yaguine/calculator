@@ -294,9 +294,31 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* 
+ * Theme 1 
+ *
+ */
+/*Backgrounds*/
+/*Keys*/
+/*Text*/
+/* 
+ * Theme 2 
+ *
+ */
+/* Backgrounds */
+/* Keys */
+/* Text */
+/* 
+ * Theme 3
+ *
+ */
+/* Backgrounds */
+/* Keys */
+/* Text */
 /*General styles*/
 html {
-  font-size: 16px; }
+  font-family: "Spartan", sans-serif;
+  font-size: 32px; }
 
 img {
   width: 100%;
@@ -312,7 +334,7 @@ img {
   flex-direction: column; }
 
 .limited {
-  max-width: 1140px;
+  max-width: 555px;
   margin: auto; }
 
 .small-1 {
@@ -350,6 +372,215 @@ img {
 
 .small-12 {
   flex-basis: 100%; }
+
+/*Estilos generales (sin theme)*/
+main {
+  padding: 5%;
+  /*Estilos para la parte superior*/
+  /*Estilos para la 'pantalla'*/
+  /*Estilos para los botones*/ }
+  main #top-div {
+    display: flex; }
+    main #top-div > div {
+      flex-basis: 50%; }
+    main #top-div .div-slider {
+      display: flex;
+      font-size: 12px; }
+      main #top-div .div-slider .slider-label {
+        flex-basis: 50%;
+        padding: 7.5% 0 0 14%; }
+        @media only screen and (max-width: 350px) {
+          main #top-div .div-slider .slider-label {
+            padding: 10% 0 0 5%; } }
+      main #top-div .div-slider .div-slider-inside {
+        flex-basis: 50%; }
+        main #top-div .div-slider .div-slider-inside .slider-values {
+          display: flex; }
+          main #top-div .div-slider .div-slider-inside .slider-values span {
+            flex-basis: 33%;
+            text-align: center; }
+        main #top-div .div-slider .div-slider-inside .slider {
+          display: flex;
+          justify-content: space-between;
+          width: 90%;
+          height: 55%;
+          margin: auto;
+          border-radius: 10px; }
+          main #top-div .div-slider .div-slider-inside .slider > div {
+            flex-basis: 18%;
+            margin: 2% 5%;
+            border-radius: 10px; }
+            @media only screen and (max-width: 380px) {
+              main #top-div .div-slider .div-slider-inside .slider > div {
+                margin: 4% 4%; } }
+            @media only screen and (max-width: 325px) {
+              main #top-div .div-slider .div-slider-inside .slider > div {
+                margin: 6% 3%; } }
+  main #displayer {
+    margin: 5% 0;
+    padding: 1% 4%;
+    border-radius: 10px;
+    text-align: right; }
+    main #displayer #previousNumber {
+      height: 30px;
+      padding-top: 7px;
+      font-size: 20px; }
+    main #displayer #currentNumber {
+      padding-top: 10px;
+      height: 50px; }
+  main #buttons-grid {
+    display: grid;
+    grid: auto-flow min-content/repeat(4, 1fr);
+    gap: 15px;
+    padding: 30px;
+    border-radius: 10px; }
+    main #buttons-grid > div {
+      height: 70px;
+      text-align: center; }
+      @media only screen and (max-width: 350px) {
+        main #buttons-grid > div {
+          height: 60px; } }
+    main #buttons-grid .regular-button {
+      padding-top: 28%;
+      font-size: 30px; }
+    main #buttons-grid .rare-button {
+      padding-top: 33%;
+      font-size: 20px; }
+    main #buttons-grid #butt-reset {
+      padding-top: 17%; }
+      @media only screen and (min-width: 500px) {
+        main #buttons-grid #butt-reset {
+          padding-top: 25px; } }
+    main #buttons-grid #butt-eq {
+      padding-top: 14%; }
+      @media only screen and (min-width: 500px) {
+        main #buttons-grid #butt-eq {
+          padding-top: 20px; } }
+    main #buttons-grid #butt-reset,
+    main #buttons-grid #butt-eq {
+      grid-column: span 2; }
+
+/*styles para el theme 1*/
+body.theme-1 {
+  background-color: #3a4764;
+  color: white; }
+  body.theme-1 #displayer {
+    background-color: #182034; }
+    body.theme-1 #displayer #previousNumber {
+      color: rgba(255, 255, 255, 0.7); }
+  body.theme-1 .slider {
+    background-color: #232c43; }
+    body.theme-1 .slider .marked {
+      background-color: #d03f2f; }
+  body.theme-1 #buttons-grid {
+    background-color: #232c43; }
+    body.theme-1 #buttons-grid .regular-button {
+      background-color: #eae3dc;
+      box-shadow: 0 3px 0 0 #b4a597;
+      color: #444b5a;
+      border: none;
+      border-radius: 5px; }
+    body.theme-1 #buttons-grid .regular-button:active {
+      margin-top: 3px;
+      box-shadow: none; }
+    body.theme-1 #buttons-grid .rare-button {
+      background-color: #637097;
+      box-shadow: 0 3px 0 0 #404e72;
+      border: none;
+      border-radius: 5px; }
+    body.theme-1 #buttons-grid .rare-button:active {
+      margin-top: 3px;
+      box-shadow: none; }
+    body.theme-1 #buttons-grid #butt-eq {
+      background-color: #d03f2f;
+      box-shadow: 0 3px 0 0 #93261a;
+      border: none;
+      border-radius: 5px; }
+    body.theme-1 #buttons-grid #butt-eq:active {
+      margin-top: 3px;
+      box-shadow: none; }
+
+/*styles para el theme 2*/
+body.theme-2 {
+  background-color: #e6e6e6;
+  color: #35352c; }
+  body.theme-2 #displayer {
+    background-color: #ededed; }
+    body.theme-2 #displayer #previousNumber {
+      color: rgba(53, 53, 44, 0.7); }
+  body.theme-2 .slider {
+    background-color: #d1cccc; }
+    body.theme-2 .slider .marked {
+      background-color: #ca5502; }
+  body.theme-2 #buttons-grid {
+    background-color: #d1cccc; }
+    body.theme-2 #buttons-grid .regular-button {
+      background-color: #e5e4e1;
+      box-shadow: 0 3px 0 0 #a69d91;
+      border: none;
+      border-radius: 5px; }
+    body.theme-2 #buttons-grid .regular-button:active {
+      margin-top: 3px;
+      box-shadow: none; }
+    body.theme-2 #buttons-grid .rare-button {
+      background-color: #377f86;
+      box-shadow: 0 3px 0 0 #1b5f65;
+      color: white;
+      border: none;
+      border-radius: 5px; }
+    body.theme-2 #buttons-grid .rare-button:active {
+      margin-top: 3px;
+      box-shadow: none; }
+    body.theme-2 #buttons-grid #butt-eq {
+      background-color: #ca5502;
+      box-shadow: 0 3px 0 0 #893901;
+      color: white;
+      border: none;
+      border-radius: 5px; }
+    body.theme-2 #buttons-grid #butt-eq:active {
+      margin-top: 3px;
+      box-shadow: none; }
+
+/*styles para el theme 3*/
+body.theme-3 {
+  background-color: #160628;
+  color: #ffe53d; }
+  body.theme-3 #displayer {
+    background-color: #1d0934; }
+    body.theme-3 #displayer #previousNumber {
+      color: rgba(255, 229, 61, 0.7); }
+  body.theme-3 .slider {
+    background-color: #1d0934; }
+    body.theme-3 .slider .marked {
+      background-color: #00e0d1; }
+  body.theme-3 #buttons-grid {
+    background-color: #1d0934; }
+    body.theme-3 #buttons-grid .regular-button {
+      background-color: #341c4f;
+      box-shadow: 0 3px 0 0 #871c9c;
+      border: none;
+      border-radius: 5px; }
+    body.theme-3 #buttons-grid .regular-button:active {
+      margin-top: 3px;
+      box-shadow: none; }
+    body.theme-3 #buttons-grid .rare-button {
+      background-color: #58077d;
+      box-shadow: 0 3px 0 0 #bc15f4;
+      color: white;
+      border: none;
+      border-radius: 5px; }
+    body.theme-3 #buttons-grid .rare-button:active {
+      margin-top: 3px;
+      box-shadow: none; }
+    body.theme-3 #buttons-grid #butt-eq {
+      background-color: #00e0d1;
+      box-shadow: 0 3px 0 0 #6cf9f2;
+      color: #1b2428;
+      border: none;
+      border-radius: 5px; }
+    body.theme-3 #buttons-grid #butt-eq:active {
+      margin-top: 3px;
+      box-shadow: none; }
 
 @media only screen and (min-width: 576px) {
   /*General styles*/

@@ -1,0 +1,84 @@
+/* 
+ * Theme 1 
+ *
+ */
+
+/*Backgrounds*/
+
+$vdd-blue-1: hsl(222, 26%, 31%); //main background
+$vdd-blue-2: hsl(223, 31%, 20%); //toggle background, keypad background
+$vdd-blue-3: hsl(224, 36%, 15%); //screen background
+
+/*Keys*/
+
+$dd-blue-1: hsl(225, 21%, 49%); // key background
+$dd-blue-2 : hsl(224, 28%, 35%); // key shadow
+
+$red: hsl(6, 63%, 50%); // key background, toggle
+$d-red : hsl(6, 70%, 34%); // key shadow
+
+$lg-orange : hsl(30, 25%, 89%); // key background
+$g-orange : hsl(28, 16%, 65%); // key shadow
+
+/*Text*/
+
+$vdg-blue: hsl(221, 14%, 31%);
+$white: hsl(0, 0, 100%);
+
+
+
+/* 
+ * Theme 2 
+ *
+ */
+
+/* Backgrounds */
+
+$l-gray: hsl(0, 0%, 90%) ; // main background
+$g-red : hsl(0, 5%, 81%) ; // toggle background, keypad background
+$v-l-gray: hsl(0, 0%, 93%); // screen background
+
+/* Keys */
+
+$dm-cyan : hsl(185, 42%, 37%); // key background
+$vd-cyan : hsl(185, 58%, 25%); // key shadow
+
+$orange : hsl(25, 98%, 40%); // key background, toggle
+$d-orange : hsl(25, 99%, 27%); // key shadow
+
+$lg-yellow : hsl(45, 7%, 89%); // key background
+$dg-orange: hsl(35, 11%, 61%); // key shadow
+
+/* Text */
+
+$vdg-yellow: rgb(53, 53, 44);
+//White (text): hsl(0, 0, 100%)
+
+
+
+/* 
+ * Theme 3
+ *
+ */
+
+/* Backgrounds */
+
+$vd-violet-1: hsl(268, 75%, 9%); // main background
+$vd-violet-2: hsl(268, 71%, 12%); // toggle background, keypad background, screen background
+
+/* Keys */
+
+$d-violet : hsl(281, 89%, 26%); // key background
+$v-magenta : hsl(285, 91%, 52%); // key shadow
+
+$p-cyan : hsl(176, 100%, 44%); // key background, toggle
+$s-cyan : hsl(177, 92%, 70%); // key shadow
+
+$vd-violet : hsl(268, 47%, 21%); // key background
+$d-magenta : hsl(290, 70%, 36%); // key shadow
+
+/* Text */
+
+$l-yellow: rgb(255, 229, 61);
+$vd-blue: hsl(198, 20%, 13%);
+//White (text): hsl(0, 0, 100%)

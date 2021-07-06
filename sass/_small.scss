@@ -1,7 +1,8 @@
 /*General styles*/
 
-html{
-    font-size:16px;
+html {
+    font-family: "Spartan", sans-serif;
+    font-size: 32px;
 }
 
 img {
@@ -9,11 +10,10 @@ img {
     height: auto;
 }
 
-
 /*Grid styles*/
 
-.row{
-    display:flex;
+.row {
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -22,12 +22,372 @@ img {
     flex-direction: column;
 }
 
-.limited{
-    max-width: 1140px;
-    margin:auto;
+.limited {
+    max-width: 555px;
+    margin: auto;
 }
 
-@for $i from 1 to 13{
-    $w:($i/12) * 100%;
-    .small-#{$i} {flex-basis: $w;}
+@for $i from 1 to 13 {
+    $w: ($i/12) * 100%;
+    .small-#{$i} {
+        flex-basis: $w;
+    }
+}
+
+/*Estilos generales (sin theme)*/
+
+main {
+    padding: 5%;
+
+    /*Estilos para la parte superior*/
+    #top-div {
+        display: flex;
+
+        > div {
+            flex-basis: 50%;
+        }
+
+        //Estilos para la parte de la derecha (donde escoges el theme)
+        .div-slider {
+            display: flex;
+
+            font-size: 12px;
+
+            .slider-label {
+                flex-basis: 50%;
+
+                @media only screen and (max-width: 350px) {
+                    padding: 10% 0 0 5%;
+                }
+
+                padding: 7.5% 0 0 14%;
+            }
+
+            .div-slider-inside {
+                flex-basis: 50%;
+
+                .slider-values {
+                    display: flex;
+
+                    span {
+                        flex-basis: 33%;
+                        text-align: center;
+                    }
+                }
+
+                .slider {
+                    display: flex;
+                    justify-content: space-between;
+
+                    width: 90%;
+                    height: 55%;
+                    margin: auto;
+
+                    border-radius: 10px;
+
+                    > div {
+                        flex-basis: 18%;
+
+                        margin: 2% 5%;
+
+                        border-radius: 10px;
+
+                        @media only screen and (max-width: 380px) {
+                            margin: 4% 4%;
+                        }
+
+                        @media only screen and (max-width: 325px) {
+                            margin: 6% 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*Estilos para la 'pantalla'*/
+    #displayer {
+        margin: 5% 0;
+        padding: 1% 4%;
+
+        border-radius: 10px;
+
+        text-align: right;
+
+        #previousNumber {
+            height: 30px;
+
+            padding-top: 7px;
+
+            font-size: 20px;
+        }
+
+        #currentNumber {
+            padding-top: 10px;
+
+            height: 50px;
+        }
+    }
+
+    /*Estilos para los botones*/
+    #buttons-grid {
+        display: grid;
+        grid: auto-flow min-content / repeat(4, 1fr);
+        gap: 15px;
+
+        padding: 30px;
+
+        border-radius: 10px;
+
+        > div {
+            height: 70px;
+
+            @media only screen and (max-width: 350px) {
+                height: 60px;
+            }
+
+            text-align: center;
+        }
+
+        .regular-button {
+            padding-top: 28%;
+
+            font-size: 30px;
+        }
+
+        .rare-button {
+            padding-top: 33%;
+
+            font-size: 20px;
+        }
+
+        #butt-reset {
+            padding-top: 17%;
+
+            @media only screen and (min-width: 500px) {
+                padding-top: 25px;
+            }
+        }
+
+        #butt-eq {
+            padding-top: 14%;
+
+            @media only screen and (min-width: 500px) {
+                padding-top: 20px;
+            }
+        }
+
+        #butt-reset,
+        #butt-eq {
+            grid-column: span 2;
+        }
+    }
+}
+
+/*styles para el theme 1*/
+body.theme-1 {
+    background-color: $vdd-blue-1;
+
+    color: white;
+
+    #displayer {
+        background-color: $vdd-blue-3;
+
+        #previousNumber {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .slider {
+        background-color: $vdd-blue-2;
+
+        .marked {
+            background-color: $red;
+        }
+    }
+
+    #buttons-grid {
+        background-color: $vdd-blue-2;
+
+        .regular-button {
+            background-color: $lg-orange;
+            box-shadow: 0 3px 0 0 $g-orange;
+
+            color: $vdg-blue;
+
+            border: none;
+            border-radius: 5px;
+        }
+
+        .regular-button:active {
+            margin-top: 3px;
+            box-shadow: none;
+        }
+
+        .rare-button {
+            background-color: $dd-blue-1;
+            box-shadow: 0 3px 0 0 $dd-blue-2;
+
+            border: none;
+            border-radius: 5px;
+        }
+
+        .rare-button:active {
+            margin-top: 3px;
+            box-shadow: none;
+        }
+
+        #butt-eq {
+            background-color: $red;
+            box-shadow: 0 3px 0 0 $d-red;
+
+            border: none;
+            border-radius: 5px;
+        }
+
+        #butt-eq:active {
+            margin-top: 3px;
+            box-shadow: none;
+        }
+    }
+}
+
+/*styles para el theme 2*/
+body.theme-2 {
+    background-color: $l-gray;
+
+    color: $vdg-yellow;
+
+    #displayer {
+        background-color: $v-l-gray;
+
+        #previousNumber {
+            color: rgba(53, 53, 44, 0.7);
+        }
+    }
+
+    .slider {
+        background-color: $g-red;
+
+        .marked {
+            background-color: $orange;
+        }
+    }
+
+    #buttons-grid {
+        background-color: $g-red;
+
+        .regular-button {
+            background-color: $lg-yellow;
+            box-shadow: 0 3px 0 0 $dg-orange;
+
+            border: none;
+            border-radius: 5px;
+        }
+
+        .regular-button:active {
+            margin-top: 3px;
+            box-shadow: none;
+        }
+
+        .rare-button {
+            background-color: $dm-cyan;
+            box-shadow: 0 3px 0 0 $vd-cyan;
+
+            color: $white;
+
+            border: none;
+            border-radius: 5px;
+        }
+
+        .rare-button:active {
+            margin-top: 3px;
+            box-shadow: none;
+        }
+
+        #butt-eq {
+            background-color: $orange;
+            box-shadow: 0 3px 0 0 $d-orange;
+
+            color: $white;
+
+            border: none;
+            border-radius: 5px;
+        }
+
+        #butt-eq:active {
+            margin-top: 3px;
+            box-shadow: none;
+        }
+    }
+}
+
+/*styles para el theme 3*/
+body.theme-3 {
+    background-color: $vd-violet-1;
+
+    color: $l-yellow;
+
+    #displayer {
+        background-color: $vd-violet-2;
+
+        #previousNumber {
+            color: rgba(255, 229, 61, 0.7);
+        }
+    }
+
+    .slider {
+        background-color: $vd-violet-2;
+
+        .marked {
+            background-color: $p-cyan;
+        }
+    }
+
+    #buttons-grid {
+        background-color: $vd-violet-2;
+
+        .regular-button {
+            background-color: $vd-violet;
+            box-shadow: 0 3px 0 0 $d-magenta;
+
+            border: none;
+            border-radius: 5px;
+        }
+
+        .regular-button:active {
+            margin-top: 3px;
+            box-shadow: none;
+        }
+
+        .rare-button {
+            background-color: $d-violet;
+            box-shadow: 0 3px 0 0 $v-magenta;
+
+            color: $white;
+
+            border: none;
+            border-radius: 5px;
+        }
+
+        .rare-button:active {
+            margin-top: 3px;
+            box-shadow: none;
+        }
+
+        #butt-eq {
+            background-color: $p-cyan;
+            box-shadow: 0 3px 0 0 $s-cyan;
+
+            color: $vd-blue;
+
+            border: none;
+            border-radius: 5px;
+        }
+
+        #butt-eq:active {
+            margin-top: 3px;
+            box-shadow: none;
+        }
+    }
 }

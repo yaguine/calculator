@@ -8,6 +8,12 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,35 +29,47 @@
   </style>
 </head>
 
-<body>
-  <div id="previousNumber" style="height:30px"></div>
-  <div id="currentNumber" style="height:30px">0</div>
-  <div>
-    <button id="butt-del" class="">DEL</button>
-    <button id="butt-reset" class="">RESET</button>
-  </div>
-  <div>
-    <button id="butt-0" class="digit-button">0</button>
-    <button id="butt-1" class="digit-button">1</button>
-    <button id="butt-2" class="digit-button">2</button>
-    <button id="butt-3" class="digit-button">3</button>
-    <button id="butt-4" class="digit-button">4</button>
-    <button id="butt-5" class="digit-button">5</button>
-    <button id="butt-6" class="digit-button">6</button>
-    <button id="butt-7" class="digit-button">7</button>
-    <button id="butt-8" class="digit-button">8</button>
-    <button id="butt-9" class="digit-button">9</button>
-    <button id="butt-point" class="">.</button>
-  </div>
-  <div>
-    <button id="butt-add" class="operator-button">+</button>
-    <button id="butt-subs" class="operator-button">-</button>
-    <button id="butt-mult" class="operator-button">X</button>
-    <button id="butt-div" class="operator-button">/</button>
-  </div>
-  <div>
-    <button id="butt-eq">=</button>
-  </div>
+<body class="theme-1">
+  <main class="column limited">
+    <div id="top-div">
+      <div class="div-logo">calc</div>
+      <div class="div-slider">
+        <div class="slider-label">THEME</div>
+        <div class="div-slider-inside">
+          <div class="slider-values"><span>1</span><span>2</span><span>3</span></div>
+          <div class="slider">
+            <div id="option-theme-1" class="marked"></div>
+            <div id="option-theme-2"></div>
+            <div id="option-theme-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="displayer">
+      <div id="previousNumber"></div>
+      <div id="currentNumber">0</div>
+    </div>
+    <div id="buttons-grid">
+      <div id="butt-7" class="digit-button regular-button">7</div>
+      <div id="butt-8" class="digit-button regular-button">8</div>
+      <div id="butt-9" class="digit-button regular-button">9</div>
+      <div id="butt-del" class="rare-button">DEL</div>
+      <div id="butt-4" class="digit-button regular-button">4</div>
+      <div id="butt-5" class="digit-button regular-button">5</div>
+      <div id="butt-6" class="digit-button regular-button">6</div>
+      <div id="butt-add" class="operator-button regular-button">+</div>
+      <div id="butt-1" class="digit-button regular-button">1</div>
+      <div id="butt-2" class="digit-button regular-button">2</div>
+      <div id="butt-3" class="digit-button regular-button">3</div>
+      <div id="butt-subs" class="operator-button regular-button">-</div>
+      <div id="butt-point" class="regular-button">.</div>
+      <div id="butt-0" class="digit-button regular-button">0</div>
+      <div id="butt-div" class="operator-button regular-button">/</div>
+      <div id="butt-mult" class="operator-button regular-button">X</div>
+      <div id="butt-reset" class="rare-button">RESET</div>
+      <div id="butt-eq">=</div>
+    </div>
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
