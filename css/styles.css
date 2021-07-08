@@ -481,24 +481,24 @@ body.theme-1 {
       border: none;
       border-radius: 5px; }
     body.theme-1 #buttons-grid .regular-button:active {
-      margin-top: 3px;
-      box-shadow: none; }
+      box-shadow: none;
+      transform: translateY(3px); }
     body.theme-1 #buttons-grid .rare-button {
       background-color: #637097;
       box-shadow: 0 3px 0 0 #404e72;
       border: none;
       border-radius: 5px; }
     body.theme-1 #buttons-grid .rare-button:active {
-      margin-top: 3px;
-      box-shadow: none; }
+      box-shadow: none;
+      transform: translateY(3px); }
     body.theme-1 #buttons-grid #butt-eq {
       background-color: #d03f2f;
       box-shadow: 0 3px 0 0 #93261a;
       border: none;
       border-radius: 5px; }
     body.theme-1 #buttons-grid #butt-eq:active {
-      margin-top: 3px;
-      box-shadow: none; }
+      box-shadow: none;
+      transform: translateY(3px); }
 
 /*styles para el theme 2*/
 body.theme-2 {
@@ -520,8 +520,8 @@ body.theme-2 {
       border: none;
       border-radius: 5px; }
     body.theme-2 #buttons-grid .regular-button:active {
-      margin-top: 3px;
-      box-shadow: none; }
+      box-shadow: none;
+      transform: translateY(3px); }
     body.theme-2 #buttons-grid .rare-button {
       background-color: #377f86;
       box-shadow: 0 3px 0 0 #1b5f65;
@@ -529,8 +529,8 @@ body.theme-2 {
       border: none;
       border-radius: 5px; }
     body.theme-2 #buttons-grid .rare-button:active {
-      margin-top: 3px;
-      box-shadow: none; }
+      box-shadow: none;
+      transform: translateY(3px); }
     body.theme-2 #buttons-grid #butt-eq {
       background-color: #ca5502;
       box-shadow: 0 3px 0 0 #893901;
@@ -538,8 +538,8 @@ body.theme-2 {
       border: none;
       border-radius: 5px; }
     body.theme-2 #buttons-grid #butt-eq:active {
-      margin-top: 3px;
-      box-shadow: none; }
+      box-shadow: none;
+      transform: translateY(3px); }
 
 /*styles para el theme 3*/
 body.theme-3 {
@@ -561,8 +561,8 @@ body.theme-3 {
       border: none;
       border-radius: 5px; }
     body.theme-3 #buttons-grid .regular-button:active {
-      margin-top: 3px;
-      box-shadow: none; }
+      box-shadow: none;
+      transform: translateY(3px); }
     body.theme-3 #buttons-grid .rare-button {
       background-color: #58077d;
       box-shadow: 0 3px 0 0 #bc15f4;
@@ -570,8 +570,8 @@ body.theme-3 {
       border: none;
       border-radius: 5px; }
     body.theme-3 #buttons-grid .rare-button:active {
-      margin-top: 3px;
-      box-shadow: none; }
+      box-shadow: none;
+      transform: translateY(3px); }
     body.theme-3 #buttons-grid #butt-eq {
       background-color: #00e0d1;
       box-shadow: 0 3px 0 0 #6cf9f2;
@@ -579,8 +579,8 @@ body.theme-3 {
       border: none;
       border-radius: 5px; }
     body.theme-3 #buttons-grid #butt-eq:active {
-      margin-top: 3px;
-      box-shadow: none; }
+      box-shadow: none;
+      transform: translateY(3px); }
 
 @media only screen and (min-width: 576px) {
   /*General styles*/
