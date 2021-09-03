@@ -1,7 +1,7 @@
-#Calculator
+# Calculator
 
 Esto es una calculadora
 
-###Enlaces
+### Enlaces
 
 Esto es un [enlace](https://www.titaniasoft.es)
